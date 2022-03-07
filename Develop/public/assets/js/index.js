@@ -181,3 +181,5 @@ if (window.location.pathname === "/notes") {
 }
 
 getAndRenderNotes();
+
+// test commit
