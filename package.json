@@ -1,9 +1,22 @@
 {
-  "name": "25-Ins_Heroku",
+  "name": "note-taker",
   "version": "1.0.0",
   "main": "server.js",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "Create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riz1ash786/note-taker.git"
+  },
+  "author": "Rizwan Ashraf",
+  "bugs": {
+    "url": "https://github.com/riz1ash786/note-taker/issues"
+  },
+  "homepage": "https://github.com/riz1ash786/note-taker#readme"
 }
