@@ -8,11 +8,12 @@ const PORT = process.env.PORT || 3000;
 
 // parse date from string or array
 app.use(express.urlencoded({ extended: true }));
-
 // parse json data
 app.use(express.json());
+// use public folder
 app.use(express.static("public"));
 
+// routes
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 
