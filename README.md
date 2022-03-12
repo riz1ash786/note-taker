@@ -64,19 +64,19 @@ If you have any additional questions then please get in touch via github or emai
 ## Screenshot
 
 Homepage
-![note-taker homepage](./assets/homepage.png)
+![note-taker homepage](./Assets/Images/homepage.png)
 
 Create new note
-![groceries-note](./assets/create-groceries-note.png)
+![groceries-note](./Assets/Images/create-groceries-note.png)
 
 Create multiple new notes
-![todo list-note](./assets/create-todo-note.png)
+![todo list-note](./Assets/Images/create-todo-note.png)
 
 Recall previously saved notes
-![recall-note](./assets/recall-previous-note.png)
+![recall-note](./Assets/Images/recall-previous-note.png)
 
 Delete notes
-![delete-note](./assets/delete-notes.png)
+![delete-note](./Assets/Images/delete-notes.png)
 
 ## Demonstration Links
 
