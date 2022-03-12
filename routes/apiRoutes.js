@@ -1,10 +1,10 @@
 // require dependencies
 const router = require("express").Router();
-const store = require("../db/storeData");
+const storeData = require("../db/storeData");
 
 // GET request
 router.get("/notes", (req, res) => {
-  store
+  storeData
     .getNotes()
     .then((notes) => {
       res.json(notes);

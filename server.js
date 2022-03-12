@@ -1,13 +1,12 @@
 // required modules
 const express = require("express");
-const path = require("path");
 
 const apiRoutes = require("./routes/apiRoutes.js");
 const htmlRoutes = require("./routes/htmlRoutes.js");
 
-// express server create at server port 3000
+// express server create at server port 3001
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // parse date from string or array
 app.use(express.urlencoded({ extended: true }));
