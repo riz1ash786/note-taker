@@ -4,9 +4,9 @@ const express = require("express");
 const apiRoutes = require("./routes/apiRoutes.js");
 const htmlRoutes = require("./routes/htmlRoutes.js");
 
-// express server create at server port 3001
+// express server create at server port 3000
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // parse date from string or array
 app.use(express.urlencoded({ extended: true }));
