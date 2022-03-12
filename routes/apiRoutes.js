@@ -1,10 +1,10 @@
 // require dependencies
 const router = require("express").Router();
-const storeData = require("../db/storeData");
+const store = require("../db/store");
 
 // GET request
 router.get("/notes", (req, res) => {
-  storeData
+  store
     .getNotes()
     .then((notes) => {
       res.json(notes);
@@ -16,7 +16,7 @@ router.get("/notes", (req, res) => {
 
 // POST request
 router.post("/notes", (req, res) => {
-  storeData
+  store
     .addNote(req.body)
     .then((note) => {
       res.json(note);
@@ -28,7 +28,7 @@ router.post("/notes", (req, res) => {
 
 // Delete request
 router.delete("/notes/:id", (req, res) => {
-  storeData
+  store
     .clearNote(req.params.id)
     .then(() => res.json({ ok: true }))
     .catch((err) => res.status(500).json(err));

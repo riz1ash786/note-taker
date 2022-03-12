@@ -1,12 +1,12 @@
 // require dependencies
 const fs = require("fs");
 const util = require("util");
-const uuid = require("uuid");
+const { v4: uuidv4 } = require("uuid");
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
-class storeData {
+class store {
   read() {
     return readFileAsync("db/db.json", "utf8");
   }
@@ -21,7 +21,7 @@ class storeData {
       throw new Error("title and text cannot be blank");
     }
     // UUID used to create IDs
-    const newNote = { title, text, id: uuid() };
+    const newNote = { title, text, id: uuidv4() };
 
     return this.getNotes()
       .then((notes) => [...notes, newNote])
@@ -43,4 +43,4 @@ class storeData {
   }
 }
 
-module.exports = new storeData();
+module.exports = new store();
